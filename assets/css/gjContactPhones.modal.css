@@ -1,0 +1,72 @@
+/**
+* Разметка модфльного окна  Контактные телефоны
+*
+*
+*/
+
+
+
+
+
+
+.gjContactPhones .fancybox-content{
+    padding: 5px;
+}
+.gjContactPhones .fancybox-content .modal__header {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 56px;
+    padding-left: 16px;
+    padding-right: 68px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.gjContactPhones .fancybox-content .modal__heading {
+    overflow: hidden;
+    font-size: 20px;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.gjContactPhones .fancybox-content .modal__content{
+    height: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.gjContactPhones .fancybox-content .modal-contacts__row {
+    margin-bottom: 16px;
+}
+.gjContactPhones .fancybox-content .modal-contacts__label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #221f1f;
+}
+.gjContactPhones .fancybox-content .modal-contacts__phone-link {
+    display: block;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.gjContactPhones .fancybox-content .modal-contacts__schedule-day,
+.gjContactPhones .fancybox-content .modal-contacts__schedule-time {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 6px;
+    font-size: 14px;
+
+}

@@ -13,15 +13,22 @@
 use Joomla\CMS\Helper\ModuleHelper;
 use Joomla\CMS\Factory;
 
+$doc = JFactory::getDocument();
+
 JLoader::registerNamespace('GNZ11', JPATH_LIBRARIES . '/GNZ11', $reset = false, $prepend = false, $type = 'psr4');
 
 $url = '/modules/mod_gj_contact_phones/assets/js/mod_gj_contact_phones.js' ;
+
+
 $onClickScript = null ;
 if (class_exists('\GNZ11\Document\Dom'))
 {
 	try
 	{
 		$onClickScript = \GNZ11\Core\Js::getLoadJs($url);
+		$urlStyleSheet = '/modules/mod_gj_contact_phones/assets/css/gjContactPhones.modal.css' ;
+		$doc->addStyleSheet($urlStyleSheet, $options = ['version'=>'auto'], $attribs = ['id'=>'stylesheet']);
+
 	}
 	catch (Exception $e)
 	{
@@ -35,6 +42,7 @@ if (class_exists('\GNZ11\Document\Dom'))
 	$doc->addScript($url, $options = ['version' => 'auto'], $attribs = ['async' => 'async' , 'defer'=>'defer'] );
 	$onClickScript = 'ModGjContactPhones.getData()' ;
 }#END IF
+
 
 
 
