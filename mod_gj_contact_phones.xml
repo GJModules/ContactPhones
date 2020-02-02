@@ -34,9 +34,19 @@
 					filter="url"
 					validate="url"
 				/>
+				<field name="html_text"
+					type="editor"
+					buttons=""
+					class="html_text "
+					label="MOD_GJ_CONTACT_PHONES_HTML_TEXT"
+					description="MOD_GJ_CONTACT_PHONES_HTML_TEXT_DESC"
+					showon=""
+					filter="raw" />
+					
+					
+
 			</fieldset>
-			<fieldset
-					name="advanced">
+			<fieldset name="advanced">
 				<field
 						name="moduleclass_sfx"
 						type="text"
