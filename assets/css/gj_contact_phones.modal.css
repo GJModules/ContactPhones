@@ -1,16 +1,22 @@
 /**
 * Разметка модфльного окна  Контактные телефоны
 *
-*
+*  
 */
-
-
-
+.gjContactPhones.fancybox-is-open .fancybox-bg{
+    background: #1e1e1e21;
+    opacity: .5;
+    transition-timing-function: cubic-bezier(.22,.61,.36,1);
+}
 
 
 
 .gjContactPhones .fancybox-content{
     padding: 5px;
+    max-width: 440px;
+    max-height: 100%;
+    box-shadow: 0 8px 40px rgba(0,0,0,.32);
+    border-radius: 8px;
 }
 .gjContactPhones .fancybox-content .modal__header {
     position: relative;

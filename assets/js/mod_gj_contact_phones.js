@@ -39,6 +39,7 @@ ModGjContactPhones.renrderModal = function (html) {
     wgnz11.__loadModul.Fancybox().then(function (a) {
         a.open( html ,{
             baseClass: "gjContactPhones",
+
             afterShow   : function(instance, current)   {},
             afterClose  : function () {
                 // jQuery(OneClick.OpenKey).removeClass("disabled")
